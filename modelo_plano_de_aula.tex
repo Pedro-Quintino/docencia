@@ -1,0 +1,186 @@
+\documentclass[a4paper,12pt,twoside]{report}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsthm}
+\usepackage{graphicx,amssymb}
+\usepackage[all]{xy}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks,linkcolor=black,hyperindex=black]{hyperref}
+\usepackage{calligra}%Fonte
+\usepackage{import}%Importar arquivos
+\usepackage{calrsfs}%Letras caligráficas 
+\usepackage{multicol}%Criar multiplas colunas
+\usepackage{tikz}%Desenhar
+\usepackage{tikz-cd}% diagrama de setas
+\usetikzlibrary{positioning}%Desenhar 2 coordenadas plano cartesiano
+\usepackage{verbatim}%Comentários de múltiplas linhas
+\usepackage{imakeidx}% índice remissivo
+\makeindex[columns=2]
+%índice remissivo
+\usepackage{hyperref}%referencias personalizada que vou utilizar para a lista de símbolos.
+\usepackage{color,soul}%marca texto
+\usepackage{multirow}%multiplas linhas pra tabela
+%define a fonte padrão
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%pacotes para tabelas ajuste de tabelas
+\usepackage{tabularx}
+\usepackage{xltabular}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+
+
+\pagestyle{headings}
+\renewcommand{\baselinestretch}{1.5}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\M}{\cal{M}}
+\newcommand{\U}{\cal{U}}
+\newcommand{\F}{\cal{F}}
+\newcommand{\As}{\mathcal{A}_s}
+\newcommand{\Ca}{\mathcal{C}}
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\FX}{F\langle X \rangle}
+
+\newtheorem{obs}{Observação}[section]
+\newtheorem{prop}{Proposição}
+\newtheorem{defi}[obs]{Definição}
+\newtheorem{teo}{Teorema}
+\newtheorem{exe}{Exemplo}
+\newtheorem{con}{Conjectura}
+\newtheorem{lem}[obs]{Lema}
+\newtheorem{cor}[obs]{Corolário}
+
+\newenvironment{dem}[1][Demonstração]{\noindent\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+
+
+\tcbuselibrary{theorems}
+
+\newtcbtheorem{mytheo}{Teorema}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem{mydef}{Definição}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+
+\newcommand{\tabitem}{\quad ~~\llap{\textbullet}~~}
+
+\begin{document}
+\noindent
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\multicolumn{2}{|l|}{\textbf{Professor:} Pedro Quintino da Silva Neto}\\
+\hline 
+\textbf{Ano:} & \multirow{2}{*}{\textbf{Nível de ensino}:  }\\
+\cline{1-1} \textbf{Turma:}  & \\
+\hline
+\multirow{1}{*}{\textbf{Carga Horária: }} & \textbf{Disciplina:} \\
+\hline
+\end{tabularx}
+
+\begin{center}
+    \textbf{Plano de Aula}
+\end{center}
+\vspace{-0.5cm}
+
+\begin{xltabular}{\textwidth}{|X|}
+\hline
+\textbf{Tema: } \\
+\textbf{Tópicos:}\\
+\tabitem\\
+\tabitem\\
+\tabitem\\
+\\\hline
+\end{xltabular}
+
+\begin{xltabular}{\textwidth}{|X|}
+\hline \multicolumn{1}{|c|}{\textbf{Objetivos}} \\ \hline 
+\endfirsthead
+\hline \multicolumn{1}{|c|}{\textbf{Objetivos}} \\  \hline
+\endhead
+\hline \multicolumn{1}{|r|}{{Continued on next page}} \\ \hline
+\endfoot
+\hline
+\endlastfoot
+\textbf{Geral:}\\
+\tabitem\\
+\textbf{Específicos: }\\
+\tabitem\\
+\tabitem\\
+\tabitem\\
+\hline
+\end{xltabular}
+
+
+\begin{xltabular}{\textwidth}{|X|}
+\hline \multicolumn{1}{|c|}{\textbf{Procedimentos didáticos/metodológicos}} \\ \hline 
+\endfirsthead
+\hline \multicolumn{1}{|c|}{\textbf{Procedimentos didáticos/metodológicos}} \\ \hline 
+\endhead
+\hline \multicolumn{1}{|r|}{{Continua na próxima página}} \\ \hline
+\endfoot
+\hline
+\endlastfoot
+``O conteúdo será apresentado por meio de aula expositiva dialogada. Essa apresentação será dividida da seguinte forma:''\\
+\tabitem\\
+\tabitem\\
+\tabitem\\
+\hline
+\end{xltabular}
+
+\begin{xltabular}{\textwidth}{|X|}
+\hline \multicolumn{1}{|c|}{\textbf{Recursos materiais}} \\ \hline 
+\endfirsthead
+\hline \multicolumn{1}{|c|}{\textbf{Recursos materiais}} \\  \hline
+\endhead
+\hline \multicolumn{1}{|r|}{{Continua na próxima página}} \\ \hline
+\endfoot
+\hline
+\endlastfoot
+\tabitem\\
+\tabitem\\
+\tabitem\\
+\hline
+\end{xltabular}
+
+\begin{xltabular}{\textwidth}{|X|}
+\hline \multicolumn{1}{|c|}{\textbf{Avaliação}} \\ \hline 
+\endfirsthead
+\hline \multicolumn{1}{|c|}{\textbf{Avaliação}} \\  \hline
+\endhead
+\hline \multicolumn{1}{|r|}{{Continua na próxima página}} \\ \hline
+\endfoot
+\hline
+\endlastfoot
+\\
+\end{xltabular}
+
+\begin{xltabular}{\textwidth}{|X|}
+\hline \multicolumn{1}{|c|}{\textbf{Referências Bibliográficas}} \\ \hline 
+\endfirsthead
+\hline \multicolumn{1}{|c|}{\textbf{Referências Bibliográficas}} \\  \hline
+\endhead
+\hline \multicolumn{1}{|r|}{{Continua na próxima página}} \\ \hline
+\endfoot
+\hline
+\endlastfoot
+\\
+\end{xltabular}
+\newpage
+
+\begin{center}
+\begin{underline}{\textbf{DESENVOLVIMENTO DA AULA}} 
+\end{underline}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
