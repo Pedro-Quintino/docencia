@@ -1,0 +1,111 @@
+\documentclass[a4paper,12pt,twoside]{report}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsthm}
+\usepackage{graphicx,amssymb}
+\usepackage[all]{xy}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks,linkcolor=black,hyperindex=black]{hyperref}
+\usepackage{calligra}%Fonte
+\usepackage{import}%Importar arquivos
+\usepackage{calrsfs}%Letras caligráficas 
+\usepackage{multicol}%Criar multiplas colunas
+\usepackage{tikz}%Desenhar
+\usepackage{tikz-cd}% diagrama de setas
+\usetikzlibrary{positioning}%Desenhar 2 coordenadas plano cartesiano
+\usepackage{verbatim}%Comentários de múltiplas linhas
+\usepackage{imakeidx}% índice remissivo
+\makeindex[columns=2]
+%índice remissivo
+\usepackage{hyperref}%referencias personalizada que vou utilizar para a lista de símbolos.
+\usepackage{color,soul}%marca texto
+\usepackage{multirow}%multiplas linhas pra tabela
+%define a fonte padrão
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%pacotes para tabelas ajuste de tabelas
+\usepackage{tabularx}
+\usepackage{xltabular}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+
+
+\pagestyle{headings}
+\renewcommand{\baselinestretch}{1.5}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\M}{\cal{M}}
+\newcommand{\U}{\cal{U}}
+\newcommand{\F}{\cal{F}}
+\newcommand{\As}{\mathcal{A}_s}
+\newcommand{\Ca}{\mathcal{C}}
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\FX}{F\langle X \rangle}
+
+\newtheorem{obs}{Observação}[section]
+\newtheorem{prop}{Proposição}
+\newtheorem{defi}[obs]{Definição}
+\newtheorem{teo}{Teorema}
+\newtheorem{exe}{Exemplo}
+\newtheorem{con}{Conjectura}
+\newtheorem{lem}[obs]{Lema}
+\newtheorem{cor}[obs]{Corolário}
+
+\newenvironment{dem}[1][Demonstração]{\noindent\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+
+
+\tcbuselibrary{theorems}
+
+\newtcbtheorem{mytheo}{Teorema}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem{mydef}{Definição}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+
+\newcommand{\tabitem}{\quad ~~\llap{\textbullet}~~}
+
+\begin{document}
+\noindent
+\begin{tabularx}{\textwidth}{|X|c|}
+\hline
+\multicolumn{2}{|l|}{\rule{0pt}{25pt}\textbf{Aluno:} }\\
+\hline 
+\textbf{Disciplina:} \hfill \textbf{Nota:} & \multirow{1}{*}{\hspace{2cm}  }\\
+\cline{1-1} \textbf{Turma:}  &  \\
+\cline{1-1}
+\textbf{Data:} XX/XX/XXXX \hspace{2cm} \textbf{Valor:} XX &  \\
+\hline
+\end{tabularx}
+
+\begin{center}
+    \textbf{Prova X}
+\end{center}
+\vspace{-0.5cm}
+
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+    \item
+    \item
+\end{enumerate}
+
+\begin{xltabular}{\textwidth}{|X|}
+\hline
+Este espaço \textbf{\underline{não}} será avaliado! Use-o, caso queira, para fazer algum comentário, crítica, piada ou desenho. \vspace{3cm}\\
+
+\\\hline
+\end{xltabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
