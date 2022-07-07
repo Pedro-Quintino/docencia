@@ -1,0 +1,162 @@
+\documentclass[a4paper,11pt,twoside]{report}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsthm}
+\usepackage{graphicx,amssymb}
+\usepackage[all]{xy}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks,linkcolor=black,hyperindex=black]{hyperref}
+\usepackage{calligra}%Fonte
+\usepackage{import}%Importar arquivos
+\usepackage{calrsfs}%Letras caligráficas 
+\usepackage{multicol}%Criar multiplas colunas
+\usepackage{tikz}%Desenhar
+\usepackage{tikz-cd}% diagrama de setas
+\usetikzlibrary{positioning}%Desenhar 2 coordenadas plano cartesiano
+\usepackage{verbatim}%Comentários de múltiplas linhas
+\usepackage{imakeidx}% índice remissivo
+\makeindex[columns=2]
+%índice remissivo
+\usepackage{hyperref}%referencias personalizada que vou utilizar para a lista de símbolos.
+\usepackage{color,soul}%marca texto
+\usepackage{multirow}%multiplas linhas pra tabela
+%define a fonte padrão
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+%pacotes para tabelas ajuste de tabelas
+\usepackage{tabularx}
+\usepackage{xltabular}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+
+
+\pagestyle{headings}
+\renewcommand{\baselinestretch}{1.5}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\M}{\cal{M}}
+\newcommand{\U}{\cal{U}}
+\newcommand{\F}{\cal{F}}
+\newcommand{\As}{\mathcal{A}_s}
+\newcommand{\Ca}{\mathcal{C}}
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\J}{\mathcal{J}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\FX}{F\langle X \rangle}
+
+\newtheorem{obs}{Observação}[section]
+\newtheorem{prop}{Proposição}
+\newtheorem{defi}[obs]{Definição}
+\newtheorem{teo}{Teorema}
+\newtheorem{exe}{Exemplo}
+\newtheorem{con}{Conjectura}
+\newtheorem{lem}[obs]{Lema}
+\newtheorem{cor}[obs]{Corolário}
+
+\newenvironment{dem}[1][Demonstração]{\noindent\textbf{#1:} }{\hfill \rule{0.5em}{0.5em}}
+
+\tcbuselibrary{theorems}
+
+\newtcbtheorem{mytheo}{Teorema}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem{mydef}{Definição}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\newcommand{\tabitem}{\quad ~~\llap{\textbullet}~~}
+
+\newcounter{rowcount}
+\setcounter{rowcount}{0}
+
+\begin{document}
+\pagestyle{empty}
+\noindent
+\begin{tabularx}{\textwidth}{X c}
+\hline
+\multicolumn{2}{|l|}{\textbf{Disciplina: }}\\
+\hline
+\multicolumn{2}{|l|}{\textbf{Turma: }}\\
+\hline
+& \multicolumn{1}{|r|}{\rule{0pt}{25pt}\textbf{DATA:}\quad\underline{\hspace{0.8cm}}/\underline{\hspace{0.8cm}}/\underline{\hspace{1.2cm}} }\\
+\cline{2-2}
+\end{tabularx}
+
+\begin{center}
+    \textbf{Lista de presença}
+\end{center}
+
+\noindent
+\begin{tabularx}{\textwidth}{|c| c |X|}
+\hline
+\textbf{ID} & \textbf{Nome} & \multicolumn{1}{c|}{\textbf{Assinatura}}\\
+\hline
+1. & \hspace{6cm} &\\
+\hline
+2. &  &\\
+\hline
+3. &  &\\
+\hline
+4. &  &\\
+\hline
+5. &  &\\
+\hline
+6. &  &\\
+\hline
+7. &  &\\
+\hline
+8. &  &\\
+\hline
+9. &  &\\
+\hline
+10. &  &\\
+\hline
+11. &  &\\
+\hline
+12. &  &\\
+\hline
+13. &  &\\
+\hline
+14. &  &\\
+\hline
+15. &  &\\
+\hline
+16. &  &\\
+\hline
+17. &  &\\
+\hline
+18. &  &\\
+\hline
+19. &  &\\
+\hline
+20. &  &\\
+\hline
+21. &  &\\
+\hline
+22. &  &\\
+\hline
+23. &  &\\
+\hline
+24. &  &\\
+\hline
+25. &  &\\
+\hline
+26. &  &\\
+\hline
+27. &  &\\
+\hline
+28. &  &\\
+\hline
+
+
+\end{tabularx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
